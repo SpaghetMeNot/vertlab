@@ -360,78 +360,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#vertex-attributes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Vertex Attributes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sculpting-masks_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sculpting Masks
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tool-highlights" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tool Highlights
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Tool Highlights">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#advanced-mesh-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Advanced Mesh Analysis
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#attributemask-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Attribute/Mask Flow
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vertex-color-powerhouse" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Vertex Color powerhouse
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1449,78 +1377,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#vertex-attributes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Vertex Attributes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sculpting-masks_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sculpting Masks
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tool-highlights" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tool Highlights
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Tool Highlights">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#advanced-mesh-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Advanced Mesh Analysis
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#attributemask-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Attribute/Mask Flow
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vertex-color-powerhouse" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Vertex Color powerhouse
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1550,13 +1406,13 @@
 </div>
 <p>Welcome to the vertLab documentation. Here you'll find everything there is to know about the tools.</p>
 <h2 id="what-is-vertlab">What is vertLab?<a class="headerlink" href="#what-is-vertlab" title="Permanent link">¶</a></h2>
-<p>vertLab is a collection of tools for controlling <strong>vertex attributes</strong> and <strong>sculpting masks</strong>.</p>
-<p>Attributes are incredibly versatile, example uses include:</p>
+<p>VertLab is a collection of tools for controlling <strong>vertex attributes</strong> and <strong>sculpting masks</strong>.</p>
+<p>Vertex attributes are versatile. Example use-cases include:</p>
 <ul>
-<li>Use in shaders e.g. for texture blending.</li>
-<li>Use to drive displacement.</li>
-<li>Bake to textures or use as masks in the texturing process.</li>
-<li>Pack to vertex colors and exported to game engines.</li>
+<li>Use to drive shader effects e.g. texture blending.</li>
+<li>Use to displace geometry.</li>
+<li>Bake to textures.</li>
+<li>Pack to vertex colors and export to a game engine.</li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">vertLab is Geometry Based</p>
@@ -1571,36 +1427,6 @@
 <h3 id="sculpting-masks"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20.71 4.63-1.34-1.34c-.37-.39-1.02-.39-1.41 0L9 12.25 11.75 15l8.96-8.96c.39-.39.39-1.04 0-1.41M7 14a3 3 0 0 0-3 3c0 1.31-1.16 2-2 2 .92 1.22 2.5 2 4 2a4 4 0 0 0 4-4 3 3 0 0 0-3-3"></path></svg></span> Sculpting Masks<a class="headerlink" href="#sculpting-masks" title="Permanent link">¶</a></h3>
 <p>Use vertLab's powerful attribute tools directly on sculpting masks. This includes mask creation, manipulation and blending.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="assets/sculpt_masks.png" data-desc-position="bottom"><img alt="sculpt_masks" src="assets/sculpt_masks.png"></a></p>
-<h3 id="vertex-attributes">Vertex Attributes<a class="headerlink" href="#vertex-attributes" title="Permanent link">¶</a></h3>
-<p>Create, modify, mix and pack vertex attributes using modifiers.</p>
-<p>Create attributes:</p>
-<ul>
-<li>Ambient Occlusion</li>
-<li>Curvature</li>
-<li>Thickness</li>
-<li>Directional Occlusion</li>
-<li>Direction Angle</li>
-<li>Linear/Radial Gradient</li>
-<li>Silhouette Distance</li>
-<li>Noise</li>
-</ul>
-<p>Modify Attributes:</p>
-<ul>
-<li>Attribute Flow</li>
-<li>
-<p>Attribute Remap</p>
-</li>
-<li>
-<p>Attribute Mix</p>
-</li>
-<li>Pack Color Attribute</li>
-</ul>
-<h3 id="sculpting-masks_1">Sculpting Masks<a class="headerlink" href="#sculpting-masks_1" title="Permanent link">¶</a></h3>
-<p>asdf</p>
-<h2 id="tool-highlights">Tool Highlights<a class="headerlink" href="#tool-highlights" title="Permanent link">¶</a></h2>
-<h3 id="advanced-mesh-analysis">Advanced Mesh Analysis<a class="headerlink" href="#advanced-mesh-analysis" title="Permanent link">¶</a></h3>
-<h3 id="attributemask-flow">Attribute/Mask Flow<a class="headerlink" href="#attributemask-flow" title="Permanent link">¶</a></h3>
-<h3 id="vertex-color-powerhouse">Vertex Color powerhouse<a class="headerlink" href="#vertex-color-powerhouse" title="Permanent link">¶</a></h3>
 
 
 
