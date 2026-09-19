@@ -5,29 +5,31 @@
       
       
       
-        <link rel="canonical" href="https://spaghetmenot.github.io/vertlab/0.1/">
+        <link rel="canonical" href="https://spaghetmenot.github.io/vertlab/0.1/modify_attributes/attribute_remap/">
       
       
+        <link rel="prev" href="../attribute_mix/">
       
-        <link rel="next" href="create_attributes/ambient_occlusion/">
+      
+        <link rel="next" href="../displace_by_attribute/">
       
       
         
       
       
-      <link rel="icon" href="assets/subDMagicIcon.png">
+      <link rel="icon" href="../../assets/subDMagicIcon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>vertLab</title>
+        <title>Attribute Remap - vertLab</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -46,13 +48,13 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
-  <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -81,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#vertlab" class="md-skip">
+        <a href="#attribute-remap" class="md-skip">
           Skip to content
         </a>
       
@@ -97,14 +99,14 @@
               
   You're not viewing the latest stable version.
   
-<a href="../."> 
+<a href="../../.."> 
     
 <strong>Click here to go to latest.</strong>
   
 </a>
 
             </div>
-            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
           </aside>
         
       </div>
@@ -116,9 +118,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="vertLab" class="md-header__button md-logo" aria-label="vertLab" data-md-component="logo">
+    <a href="../.." title="vertLab" class="md-header__button md-logo" aria-label="vertLab" data-md-component="logo">
       
-  <img src="assets/subDMagicIcon.png" alt="logo">
+  <img src="../../assets/subDMagicIcon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -135,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🚧 vertLab
+              Attribute Remap
             
           </span>
         </div>
@@ -239,9 +241,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="vertLab" class="md-nav__button md-logo" aria-label="vertLab" data-md-component="logo">
+    <a href="../.." title="vertLab" class="md-nav__button md-logo" aria-label="vertLab" data-md-component="logo">
       
-  <img src="assets/subDMagicIcon.png" alt="logo">
+  <img src="../../assets/subDMagicIcon.png" alt="logo">
 
     </a>
     vertLab
@@ -253,37 +255,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    🚧 vertLab
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -299,148 +274,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#what-is-vertlab" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What is vertLab?
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="What is vertLab?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#create-attributes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Create Attributes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modify-attributes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Modify Attributes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sculpting-masks" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sculpting Masks
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vertex-attributes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Vertex Attributes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sculpting-masks_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sculpting Masks
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tool-highlights" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tool Highlights
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Tool Highlights">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#advanced-mesh-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Advanced Mesh Analysis
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#attributemask-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Attribute/Mask Flow
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vertex-color-powerhouse" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Vertex Color powerhouse
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -526,7 +359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="create_attributes/ambient_occlusion/" class="md-nav__link">
+      <a href="../../create_attributes/ambient_occlusion/" class="md-nav__link">
         
   
   
@@ -554,7 +387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="create_attributes/attribute_noise/" class="md-nav__link">
+      <a href="../../create_attributes/attribute_noise/" class="md-nav__link">
         
   
   
@@ -582,7 +415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="create_attributes/curvature/" class="md-nav__link">
+      <a href="../../create_attributes/curvature/" class="md-nav__link">
         
   
   
@@ -610,7 +443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="create_attributes/direction_angle/" class="md-nav__link">
+      <a href="../../create_attributes/direction_angle/" class="md-nav__link">
         
   
   
@@ -638,7 +471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="create_attributes/directional_occlusion/" class="md-nav__link">
+      <a href="../../create_attributes/directional_occlusion/" class="md-nav__link">
         
   
   
@@ -666,7 +499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="create_attributes/linear_gradient/" class="md-nav__link">
+      <a href="../../create_attributes/linear_gradient/" class="md-nav__link">
         
   
   
@@ -694,7 +527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="create_attributes/object_distance/" class="md-nav__link">
+      <a href="../../create_attributes/object_distance/" class="md-nav__link">
         
   
   
@@ -722,7 +555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="create_attributes/radial_gradient/" class="md-nav__link">
+      <a href="../../create_attributes/radial_gradient/" class="md-nav__link">
         
   
   
@@ -750,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="create_attributes/silhouette_distance/" class="md-nav__link">
+      <a href="../../create_attributes/silhouette_distance/" class="md-nav__link">
         
   
   
@@ -778,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="create_attributes/thickness/" class="md-nav__link">
+      <a href="../../create_attributes/thickness/" class="md-nav__link">
         
   
   
@@ -810,8 +643,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -836,11 +671,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked="">
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -861,7 +696,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -879,7 +714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="modify_attributes/attribute_flow/" class="md-nav__link">
+      <a href="../attribute_flow/" class="md-nav__link">
         
   
   
@@ -907,7 +742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="modify_attributes/attribute_mix/" class="md-nav__link">
+      <a href="../attribute_mix/" class="md-nav__link">
         
   
   
@@ -932,10 +767,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="modify_attributes/attribute_remap/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Attribute Remap
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -951,6 +813,87 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Outputs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blur
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Levels
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#histogram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histogram
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -963,7 +906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="modify_attributes/displace_by_attribute/" class="md-nav__link">
+      <a href="../displace_by_attribute/" class="md-nav__link">
         
   
   
@@ -991,7 +934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="modify_attributes/pack_color_attribute/" class="md-nav__link">
+      <a href="../pack_color_attribute/" class="md-nav__link">
         
   
   
@@ -1019,7 +962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="modify_attributes/unpack_color_attribute/" class="md-nav__link">
+      <a href="../unpack_color_attribute/" class="md-nav__link">
         
   
   
@@ -1126,7 +1069,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sculpting_masks/mask_by_curvature/" class="md-nav__link">
+      <a href="../../sculpting_masks/mask_by_curvature/" class="md-nav__link">
         
   
   
@@ -1154,7 +1097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sculpting_masks/mask_by_direction/" class="md-nav__link">
+      <a href="../../sculpting_masks/mask_by_direction/" class="md-nav__link">
         
   
   
@@ -1182,7 +1125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sculpting_masks/mask_by_noise/" class="md-nav__link">
+      <a href="../../sculpting_masks/mask_by_noise/" class="md-nav__link">
         
   
   
@@ -1210,7 +1153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sculpting_masks/mask_by_object_distance/" class="md-nav__link">
+      <a href="../../sculpting_masks/mask_by_object_distance/" class="md-nav__link">
         
   
   
@@ -1238,7 +1181,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sculpting_masks/mask_by_occlusion/" class="md-nav__link">
+      <a href="../../sculpting_masks/mask_by_occlusion/" class="md-nav__link">
         
   
   
@@ -1266,7 +1209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sculpting_masks/mask_by_thickness/" class="md-nav__link">
+      <a href="../../sculpting_masks/mask_by_thickness/" class="md-nav__link">
         
   
   
@@ -1294,7 +1237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sculpting_masks/mask_flow/" class="md-nav__link">
+      <a href="../../sculpting_masks/mask_flow/" class="md-nav__link">
         
   
   
@@ -1322,7 +1265,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sculpting_masks/mask_from_attribute/" class="md-nav__link">
+      <a href="../../sculpting_masks/mask_from_attribute/" class="md-nav__link">
         
   
   
@@ -1350,7 +1293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sculpting_masks/mask_remap/" class="md-nav__link">
+      <a href="../../sculpting_masks/mask_remap/" class="md-nav__link">
         
   
   
@@ -1405,94 +1348,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#what-is-vertlab" class="md-nav__link">
+  <a href="#outputs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What is vertLab?
+        Outputs
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="What is vertLab?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#create-attributes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Create Attributes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modify-attributes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Modify Attributes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sculpting-masks" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sculpting Masks
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vertex-attributes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Vertex Attributes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sculpting-masks_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sculpting Masks
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tool-highlights" class="md-nav__link">
+  <a href="#settings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tool Highlights
+        Settings
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Tool Highlights">
+    <nav class="md-nav" aria-label="Settings">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#advanced-mesh-analysis" class="md-nav__link">
+  <a href="#blur" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Advanced Mesh Analysis
+        Blur
       
     </span>
   </a>
@@ -1500,10 +1382,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#attributemask-flow" class="md-nav__link">
+  <a href="#levels" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Attribute/Mask Flow
+        Levels
       
     </span>
   </a>
@@ -1511,10 +1393,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#vertex-color-powerhouse" class="md-nav__link">
+  <a href="#histogram" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Vertex Color powerhouse
+        Histogram
       
     </span>
   </a>
@@ -1543,64 +1425,59 @@
 
 
 
-<h1 id="vertlab"><img alt="🚧" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6a7.svg" title=":construction:"> vertLab<a class="headerlink" href="#vertlab" title="Permanent link">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This site is currently placeholder/WIP</p>
-</div>
-<p>Welcome to the vertLab documentation. Here you'll find everything there is to know about the tools.</p>
-<h2 id="what-is-vertlab">What is vertLab?<a class="headerlink" href="#what-is-vertlab" title="Permanent link">¶</a></h2>
-<p>vertLab is a collection of tools for controlling <strong>vertex attributes</strong> and <strong>sculpting masks</strong>.</p>
-<p>Attributes are incredibly versatile, example uses include:</p>
+<h1 id="attribute-remap">Attribute Remap<a class="headerlink" href="#attribute-remap" title="Permanent link">¶</a></h1>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/icons/attribute_remap.png" data-desc-position="bottom"><img alt="icon" src="../../assets/icons/attribute_remap.png" width="128"></a></p>
+<h2 id="outputs">Outputs<a class="headerlink" href="#outputs" title="Permanent link">¶</a></h2>
 <ul>
-<li>Use in shaders e.g. for texture blending.</li>
-<li>Use to drive displacement.</li>
-<li>Bake to textures or use as masks in the texturing process.</li>
-<li>Pack to vertex colors and exported to game engines.</li>
+<li><strong>Output:</strong> Remapped attribute.</li>
+<li><strong>Output Color:</strong> Remapped attribute as color (used for visualisation).</li>
 </ul>
-<div class="admonition info">
-<p class="admonition-title">vertLab is Geometry Based</p>
-<p>The resolution of vertLab is directly influenced by mesh density/topology.</p>
-</div>
-<h3 id="create-attributes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 11V9h-3V6h-2v3H8v2h3v3h2v-3zm1-8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-4v2h1a1 1 0 0 1 1 1h7v2h-7a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"></path></svg></span> Create Attributes<a class="headerlink" href="#create-attributes" title="Permanent link">¶</a></h3>
-<p>Create attributes from advanced mesh analysis tools such as ray-traced occlusion and curvature. Other generators include noise, gradients and camera-based silhouette.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="assets/create_attributes.png" data-desc-position="bottom"><img alt="create_attributes" src="assets/create_attributes.png"></a></p>
-<h3 id="modify-attributes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 18.25a.75.75 0 0 1 .75-.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1-.75-.75m-8-12a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 3 6.25m13 6a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75M8.75 16a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75"></path><path d="M3 18.25a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75m0-6a.75.75 0 0 1 .75-.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1-.75-.75M16.75 10a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75M14 6.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75M11.25 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75"></path></svg></span> Modify Attributes<a class="headerlink" href="#modify-attributes" title="Permanent link">¶</a></h3>
-<p>Modify attributes by remapping, mixing or flowing them down a mesh. You can also pack up to four attributes to a vertex color for exporting to game engines.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="assets/modify_attributes.png" data-desc-position="bottom"><img alt="modify_attributes" src="assets/modify_attributes.png"></a></p>
-<h3 id="sculpting-masks"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20.71 4.63-1.34-1.34c-.37-.39-1.02-.39-1.41 0L9 12.25 11.75 15l8.96-8.96c.39-.39.39-1.04 0-1.41M7 14a3 3 0 0 0-3 3c0 1.31-1.16 2-2 2 .92 1.22 2.5 2 4 2a4 4 0 0 0 4-4 3 3 0 0 0-3-3"></path></svg></span> Sculpting Masks<a class="headerlink" href="#sculpting-masks" title="Permanent link">¶</a></h3>
-<p>Use vertLab's powerful attribute tools directly on sculpting masks. This includes mask creation, manipulation and blending.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="assets/sculpt_masks.png" data-desc-position="bottom"><img alt="sculpt_masks" src="assets/sculpt_masks.png"></a></p>
-<h3 id="vertex-attributes">Vertex Attributes<a class="headerlink" href="#vertex-attributes" title="Permanent link">¶</a></h3>
-<p>Create, modify, mix and pack vertex attributes using modifiers.</p>
-<p>Create attributes:</p>
+<h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">¶</a></h2>
 <ul>
-<li>Ambient Occlusion</li>
-<li>Curvature</li>
-<li>Thickness</li>
-<li>Directional Occlusion</li>
-<li>Direction Angle</li>
-<li>Linear/Radial Gradient</li>
-<li>Silhouette Distance</li>
-<li>Noise</li>
+<li><strong>Attribute:</strong> Attribute to remap.</li>
 </ul>
-<p>Modify Attributes:</p>
+<hr>
+<h4 id="blur">Blur<a class="headerlink" href="#blur" title="Permanent link">¶</a></h4>
+<p>Blur attribute before remapping.</p>
 <ul>
-<li>Attribute Flow</li>
-<li>
-<p>Attribute Remap</p>
+<li><strong>Iterations:</strong> How many times to blur the values for all elements.</li>
+</ul>
+<hr>
+<h4 id="levels">Levels<a class="headerlink" href="#levels" title="Permanent link">¶</a></h4>
+<p>Remap attribute with levels.</p>
+<ul>
+<li><strong>Interpolation:</strong> Interpolation used for levels:<ul>
+<li><strong>Linear.</strong></li>
+<li><strong>Smooth.</strong></li>
+<li><strong>Stepped.</strong></li>
+</ul>
 </li>
-<li>
-<p>Attribute Mix</p>
-</li>
-<li>Pack Color Attribute</li>
+<li><strong>Input Range:</strong> Min/max input values. Use to increase contrast and spread black/white values.</li>
+<li><strong>Output Range:</strong> Define the value range of the output.</li>
+<li><strong>Steps:</strong> Number of steps/bands.</li>
+<li><strong>Clamp:</strong> Clamps output range between 0-1.</li>
+<li><strong>Gamma:</strong> Apply gamma to output values. 1 = no change, higher values darken, lower values brighten.</li>
 </ul>
-<h3 id="sculpting-masks_1">Sculpting Masks<a class="headerlink" href="#sculpting-masks_1" title="Permanent link">¶</a></h3>
-<p>asdf</p>
-<h2 id="tool-highlights">Tool Highlights<a class="headerlink" href="#tool-highlights" title="Permanent link">¶</a></h2>
-<h3 id="advanced-mesh-analysis">Advanced Mesh Analysis<a class="headerlink" href="#advanced-mesh-analysis" title="Permanent link">¶</a></h3>
-<h3 id="attributemask-flow">Attribute/Mask Flow<a class="headerlink" href="#attributemask-flow" title="Permanent link">¶</a></h3>
-<h3 id="vertex-color-powerhouse">Vertex Color powerhouse<a class="headerlink" href="#vertex-color-powerhouse" title="Permanent link">¶</a></h3>
+<hr>
+<h4 id="histogram">Histogram<a class="headerlink" href="#histogram" title="Permanent link">¶</a></h4>
+<p>Perform histogram operations.</p>
+<ul>
+<li><strong>Splits:</strong> Create a saw-tooth banding effect. This value corresponds to the number of bands applied.</li>
+<li><strong>Offset:</strong> Offset the histogram. (Add this value then ignore the integer component of the result).</li>
+<li><strong>Fold:</strong> Invert values above/below a threshold. Another method of creating a banding effect. Can be used to remove the abrupt changes in values caused by splits:<ul>
+<li><strong>None.</strong></li>
+<li><strong>Peaks:</strong> Invert values above a threshold</li>
+<li><strong>Valleys:</strong> Invert values below a threshold</li>
+</ul>
+</li>
+<li><strong>Fold Interpolation:</strong> Perform an additional interpolation of values after fold. This can be used to smooth sharp creases where the fold occurs:<ul>
+<li><strong>Linear.</strong></li>
+<li><strong>Smooth.</strong></li>
+<li><strong>Smoother.</strong></li>
+</ul>
+</li>
+<li><strong>Fold Threshold:</strong> Threshold of fold operation.</li>
+</ul>
 
 
 
@@ -1645,10 +1522,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tracking", "navigation.indexes", "navigation.sections", "toc.follow"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.indexes", "navigation.sections", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   
