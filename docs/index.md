@@ -7,14 +7,14 @@ Welcome to the vertLab documentation. Here you'll find everything there is to kn
 
 ## What is vertLab?
 
-vertLab is a collection of tools for controlling **vertex attributes** and **sculpting masks**.
+VertLab is a collection of tools for controlling **vertex attributes** and **sculpting masks**.
 
-Attributes are incredibly versatile, example uses include:
+Vertex attributes are versatile. Example use-cases include:
 
-- Use in shaders e.g. for texture blending.
-- Use to drive displacement.
-- Bake to textures or use as masks in the texturing process.
-- Pack to vertex colors and exported to game engines.
+- Use to drive shader effects e.g. texture blending.
+- Use to displace geometry.
+- Bake to textures.
+- Pack to vertex colors and export to a game engine.
 
 !!! info "vertLab is Geometry Based"
     The resolution of vertLab is directly influenced by mesh density/topology.
@@ -38,40 +38,3 @@ Use vertLab's powerful attribute tools directly on sculpting masks. This include
 
 
 ![sculpt_masks](./assets/sculpt_masks.png)
-
-
-
-### Vertex Attributes
-
-Create, modify, mix and pack vertex attributes using modifiers.
-
-Create attributes:
-
-- Ambient Occlusion
-- Curvature
-- Thickness
-- Directional Occlusion
-- Direction Angle
-- Linear/Radial Gradient
-- Silhouette Distance
-- Noise
-
-Modify Attributes:
-
-- Attribute Flow
-- Attribute Remap
-
-- Attribute Mix
-- Pack Color Attribute
-
-### Sculpting Masks
-
-asdf
-
-## Tool Highlights
-
-### Advanced Mesh Analysis
-
-### Attribute/Mask Flow
-
-### Vertex Color powerhouse
