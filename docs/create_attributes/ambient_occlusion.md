@@ -2,6 +2,37 @@
 
 ![icon](../assets/icons/Occlusion.png){ width=128 }
 
+Calculate ray-traced ambient occlusion on a mesh. For more information about the ray-casting process see [here](../common_settings.md#raycasting). You can reduce noise by increasing ray count (expensive) or blur (cheaper).
+
+![ao](../assets/ambient_occlusion/ambient_occlusion.png)
+
+You can preserve sharp edges by switching to the ***Face Corner*** domain. This can be useful on low poly meshes:
+
+<div class="grid cards" markdown>
+- __Point Domain__
+
+
+    ![ao point](../assets/ambient_occlusion/ao_point.png)
+
+- __Face Corner Domain__
+
+    ![ao corner](../assets/ambient_occlusion/ao_corner.png)
+</div>
+
+***Ray Length*** will change the "size" of the AO as rays will not collide with surfaces further away:
+
+<div class="grid cards" markdown>
+- __Small Ray Length__
+
+    ![ao small](../assets/ambient_occlusion/ao_small.png)
+
+- __Large Ray Length__
+
+    ![ao_large](../assets/ambient_occlusion/ambient_occlusion.png)
+</div>
+
+
+
 ## Outputs
 - **Point Occlusion:** Output occlusion attribute for points (no sharp edges).
 - **Face Corner Occlusion:** Output occlusion attribute for face corners (allows sharp edges). Domain must be set to "Face Corner".

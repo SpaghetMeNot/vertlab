@@ -2,6 +2,10 @@
 
 ![icon](../assets/icons/Gradient.png){ width=128 }
 
+Creates a simple linear gradient from one side of a mesh to another.
+
+![gradient](../assets/directional/gradient.png)
+
 ## Outputs
 - **Gradient:** Output point attribute.
 - **Color:** Output attribute as color (used for visualisation).

@@ -7,8 +7,8 @@ theme:
   font:
     text: Ubuntu
     code: Red Hat Mono
-  logo: assets/subDMagicIcon.png
-  favicon: assets/subDMagicIcon.png
+  logo: assets/vertLab_icon.png
+  favicon: assets/vertLab_icon.png
   features:
     - navigation.tracking
     - navigation.indexes
@@ -76,6 +76,8 @@ extra:
     default: latest
     alias: true
 
+extra_css:
+  - stylesheets/extra.css
 
 
 plugins:
@@ -94,4 +96,3 @@ plugins:
       background: black
       shadow: true
       manual: false
-    

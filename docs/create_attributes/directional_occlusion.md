@@ -2,6 +2,10 @@
 
 ![icon](../assets/icons/DirectionalOcclusion.png){ width=128 }
 
+Calculate ray-traced directional occlusion, in other words: A soft directional shadow. The cone angle effects how sharp or soft the shadow is. you can learn more about the raycasting process [here](../common_settings.md#raycasting). 
+
+![do](../assets/directional/directional_occlusion.png)
+
 ## Outputs
 - **Point Occlusion:** Output occlusion attribute for points (no sharp edges).
 - **Face Corner Occlusion:** Output occlusion attribute for face corners (allows sharp edges). Domain must be set to "Face Corner".

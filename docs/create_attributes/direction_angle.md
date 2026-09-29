@@ -2,6 +2,24 @@
 
 ![icon](../assets/icons/direction.png){ width=128 }
 
+Angle difference between surface normal and a direction. There are two methods of measuring angle:
+
+<div class="grid cards" markdown>
+
+- __Threshold__
+
+    ---
+    ![threshold](../assets/directional/direction_threshold.png)
+    Simple binary cutoff based on an angle threshold.
+
+- __Range__
+
+    ---
+    ![range](../assets/directional/direction_range.png)
+    Fade values between a minimum and maximum angle value
+
+</div>
+
 ## Outputs
 - **Point Output:** Output as point attribute, this will ignore sharp edges.
 - **Face Corner Output:** Output as face corner attribute. This will respect sharp edges.
