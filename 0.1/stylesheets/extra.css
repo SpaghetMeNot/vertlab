@@ -1,0 +1,4 @@
+.md-typeset .grid.cards {
+  /* The default is usually around 16rem. Adjust 12rem up or down to fit your layout. */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+}
