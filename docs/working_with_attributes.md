@@ -11,9 +11,6 @@
 
 You can write to existing attributes or create new ones by typing a new name.
 
-### Points vs Face Corners
-vertLab attributes can be stored as either point or face corner attributes.
-
 ## Viewing attributes in the viewport
 
 By default vertLab modifiers overwrite the *Color* attribute so their effect can be easily seen in the viewport.\* To show *Color* in the viewport:
@@ -40,12 +37,9 @@ By default vertLab modifiers overwrite the *Color* attribute so their effect can
 
 </div>
 
-### Color Domain
-
-When adding a color you can choose whether it's a vertex or face corner attribute
-
-\* This can be changed in the *Output Attributes* section of the modifier.
-
 
 ## Keeping track of attributes
-You can see all the attributes a mesh has by looking.
+You can see all the attributes a mesh has by looking at the     geometry spreadsheet.  
+
+### Points vs Face Corners
+vertLab attributes can be stored as either point or face corner attributes.

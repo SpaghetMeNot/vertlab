@@ -61,34 +61,38 @@ You can warp noise using another noise. Pictured below is: No warping, detailed 
 
 ## Values
 
-The values from the noise can be easily remapped.
+The values of the noise can be remapped in the values section.
 
-### Histogram 
-Histogram operations can be used to form organic banding patterns:
+[Histogram Operations](../common_settings.md#histogram-operations) can be used to add banding effects.
 
 <div class="grid cards" markdown>
 
-- __Input Noise__
+- __Base Noise__
 
-    ![fbm](../assets/noise/noise_flat.png)
+    ![base_noise](../assets/noise/noise_values_base.png)
 
-- __Split = 1__
+- __Histogram Banding__
 
-    ![voronoi_f1](../assets/noise/noise_flat_split.png)
-
-- __Fold Peaks__
-
-    ![voronoi_f2](../assets/noise/noise_flat_fold_peaks.png)
-
-- __Fold Valleys__
-
-    ![voronoi_cells_f1](../assets/noise/noise_flat_fold_valleys.png)
-
-- __Split + Fold__
-
-    ![split_fold](../assets/noise/noise_flat_split_fold_offset.png)
+    ![histogram banding](../assets/noise/noise_values_histogram.png)
 
 </div>
+
+Gamma and [S-Curve Controls](../common_settings.md#s-curve) can add contrast.
+
+<div class="grid cards" markdown>
+
+- __Base Noise__
+
+    ![base_noise](../assets/noise/noise_values_base.png)
+
+- __S-Curve Contrast__
+
+    ![s-curve_contrast](../assets/noise/noise_values_contrast.png)
+
+</div>
+
+
+
 
 
 ## Outputs

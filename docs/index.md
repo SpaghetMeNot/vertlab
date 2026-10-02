@@ -12,7 +12,7 @@ VertLab is a collection of tools for controlling **vertex attributes** and **scu
 Vertex attributes are versatile. Example use-cases include:
 
 - Use to drive shader effects e.g. texture blending.
-- Use to displace geometry.
+- Use to displace geometry, or drive any procedural geometry effect.
 - Bake to textures.
 - Pack to vertex colors and export to a game engine.
 
