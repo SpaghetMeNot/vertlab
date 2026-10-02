@@ -628,23 +628,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Values">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#histogram" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Histogram
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -726,7 +709,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#histogram_1" class="md-nav__link">
+  <a href="#histogram" class="md-nav__link">
     <span class="md-ellipsis">
       
         Histogram
@@ -1671,23 +1654,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Values">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#histogram" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Histogram
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1769,7 +1735,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#histogram_1" class="md-nav__link">
+  <a href="#histogram" class="md-nav__link">
     <span class="md-ellipsis">
       
         Histogram
@@ -1866,30 +1832,30 @@
 <p>You can warp noise using another noise. Pictured below is: No warping, detailed small warp, large scale warp:</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/noise/noise_warp_together.png" data-desc-position="bottom"><img alt="noise_warp" src="../../assets/noise/noise_warp_together.png"></a></p>
 <h2 id="values">Values<a class="headerlink" href="#values" title="Permanent link">¶</a></h2>
-<p>The values from the noise can be easily remapped.</p>
-<h3 id="histogram">Histogram<a class="headerlink" href="#histogram" title="Permanent link">¶</a></h3>
-<p>Histogram operations can be used to form organic banding patterns:</p>
+<p>The values of the noise can be remapped in the values section.</p>
+<p><a href="../../common_settings/#histogram-operations">Histogram Operations</a> can be used to add banding effects.</p>
 <div class="grid cards">
 <ul>
 <li>
-<p><strong>Input Noise</strong></p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/noise/noise_flat.png" data-desc-position="bottom"><img alt="fbm" src="../../assets/noise/noise_flat.png"></a></p>
+<p><strong>Base Noise</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/noise/noise_values_base.png" data-desc-position="bottom"><img alt="base_noise" src="../../assets/noise/noise_values_base.png"></a></p>
 </li>
 <li>
-<p><strong>Split = 1</strong></p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/noise/noise_flat_split.png" data-desc-position="bottom"><img alt="voronoi_f1" src="../../assets/noise/noise_flat_split.png"></a></p>
+<p><strong>Histogram Banding</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/noise/noise_values_histogram.png" data-desc-position="bottom"><img alt="histogram banding" src="../../assets/noise/noise_values_histogram.png"></a></p>
+</li>
+</ul>
+</div>
+<p>Gamma and <a href="../../common_settings/#s-curve">S-Curve Controls</a> can add contrast.</p>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong>Base Noise</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/noise/noise_values_base.png" data-desc-position="bottom"><img alt="base_noise" src="../../assets/noise/noise_values_base.png"></a></p>
 </li>
 <li>
-<p><strong>Fold Peaks</strong></p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/noise/noise_flat_fold_peaks.png" data-desc-position="bottom"><img alt="voronoi_f2" src="../../assets/noise/noise_flat_fold_peaks.png"></a></p>
-</li>
-<li>
-<p><strong>Fold Valleys</strong></p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/noise/noise_flat_fold_valleys.png" data-desc-position="bottom"><img alt="voronoi_cells_f1" src="../../assets/noise/noise_flat_fold_valleys.png"></a></p>
-</li>
-<li>
-<p><strong>Split + Fold</strong></p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/noise/noise_flat_split_fold_offset.png" data-desc-position="bottom"><img alt="split_fold" src="../../assets/noise/noise_flat_split_fold_offset.png"></a></p>
+<p><strong>S-Curve Contrast</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/noise/noise_values_contrast.png" data-desc-position="bottom"><img alt="s-curve_contrast" src="../../assets/noise/noise_values_contrast.png"></a></p>
 </li>
 </ul>
 </div>
@@ -1979,7 +1945,7 @@
 <li><strong>Clamp Output:</strong> Clamp output values between 0-1.</li>
 </ul>
 <hr>
-<h4 id="histogram_1">Histogram<a class="headerlink" href="#histogram_1" title="Permanent link">¶</a></h4>
+<h4 id="histogram">Histogram<a class="headerlink" href="#histogram" title="Permanent link">¶</a></h4>
 <p>Apply histogram operations.</p>
 <ul>
 <li><strong>Splits:</strong> Create a saw-tooth banding effect. This value corresponds to the number of bands applied.</li>

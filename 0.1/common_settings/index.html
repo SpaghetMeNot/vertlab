@@ -355,34 +355,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Raycasting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rays" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Rays
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#accumilation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Accumilation
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1464,34 +1436,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Raycasting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rays" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Rays
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#accumilation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Accumilation
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1535,12 +1479,65 @@
 
 <h1 id="common-settings">Common Settings<a class="headerlink" href="#common-settings" title="Permanent link">¶</a></h1>
 <h2 id="raycasting">Raycasting<a class="headerlink" href="#raycasting" title="Permanent link">¶</a></h2>
-<p>Modifiers that use ray casting all use a similar method. Rays are distributed using a Fibonnacci cone </p>
-<h3 id="rays">Rays<a class="headerlink" href="#rays" title="Permanent link">¶</a></h3>
-<h3 id="accumilation">Accumilation<a class="headerlink" href="#accumilation" title="Permanent link">¶</a></h3>
+<p>Modifiers that use ray casting use the same underlying method:</p>
+<ol>
+<li>
+<p>Rays are cast from a point in a Fibonacci cone up to the specified angle
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/rays/ray_distribution_angle.gif" data-desc-position="bottom"><img alt="rays" src="../assets/rays/ray_distribution_angle.gif" title="Ray Distribution" width="512"></a></p>
+</li>
+<li>
+<p>Collisions with geometry and their distance are recorded.</p>
+</li>
+<li>The collision data is averaged for the point using one of two methods:<ul>
+<li><strong>Hit count</strong>: Collisions / Total rays</li>
+<li><strong>Average Distance</strong>: Hit Distance / (Total Rays * Ray Length)</li>
+</ul>
+</li>
+</ol>
 <h2 id="s-curve">S-Curve<a class="headerlink" href="#s-curve" title="Permanent link">¶</a></h2>
-<p>S-Curve</p>
+<p>Many vertLab tools have "S-Curve" controls to quickly add contrast to 0:1 values.</p>
+<p>There are two settings to control a S-curve:</p>
+<ul>
+<li><strong>Intensity/Amount</strong> {-1:1} How much of a curve to add. 0 = linear interpolation.</li>
+<li><strong>Midpoint</strong> {0:1} Where the center of the S is. At fully 0 or 1 the S-curve becomes a bias.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/values/s-curve.gif" data-desc-position="bottom"><img alt="s-curve" src="../assets/values/s-curve.gif" title="S-Curve Settings"></a></p>
 <h2 id="histogram-operations">Histogram Operations<a class="headerlink" href="#histogram-operations" title="Permanent link">¶</a></h2>
+<p>These settings remap the 0:1 value range. You can see their effect on both a noise and linear gradient below.</p>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong>Input Values</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/values/values_input.png" data-desc-position="bottom"><img alt="input" src="../assets/values/values_input.png"></a></p>
+<p>Base values, no operation.</p>
+</li>
+<li>
+<p><strong>Splits</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/values/values_split1.png" data-desc-position="bottom"><img alt="split" src="../assets/values/values_split1.png"></a></p>
+<p>Scales and loops the value range. Introduces harsh transitions.</p>
+</li>
+<li>
+<p><strong>Offset</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/values/values_offset_third.png" data-desc-position="bottom"><img alt="offset" src="../assets/values/values_offset_third.png"></a></p>
+<p>Offsets and loops values.</p>
+</li>
+<li>
+<p><strong>Fold: Peaks</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/values/values_fold_peaks.png" data-desc-position="bottom"><img alt="fold_peaks" src="../assets/values/values_fold_peaks.png"></a></p>
+<p>Values above a threshold will be inverted. The threshold becomes the new white point.</p>
+</li>
+<li>
+<p><strong>Fold: Valleys</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/values/values_fold_valleys.png" data-desc-position="bottom"><img alt="fold_valleys" src="../assets/values/values_fold_valleys.png"></a></p>
+<p>Values below a threshold will be inverted. The threshold becomes the new black point.</p>
+</li>
+<li>
+<p><strong>Split + Fold</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/values/values_split_fold.png" data-desc-position="bottom"><img alt="combined" src="../assets/values/values_split_fold.png"></a></p>
+<p>Folding values removes the harsh changes introduced with using "Split".</p>
+</li>
+</ul>
+</div>
 
 
 
