@@ -16,7 +16,7 @@ Angle difference between surface normal and a direction. There are two methods o
 
     ---
     ![range](../assets/directional/direction_range.png)
-    Fade values between a minimum and maximum angle value
+    Fade values between a minimum and maximum angle.
 
 </div>
 

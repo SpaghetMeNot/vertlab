@@ -2,7 +2,9 @@
 
 ![icon](../assets/icons/DirectionalOcclusion.png){ width=128 }
 
-Calculate ray-traced directional occlusion, in other words: A soft directional shadow. The cone angle effects how sharp or soft the shadow is. you can learn more about the raycasting process [here](../common_settings.md#raycasting). 
+Calculate ray-traced directional occlusion, in other words: A soft directional shadow.
+
+The cone angle effects how sharp or soft the shadow is. You can learn more about the raycasting process [here](../common_settings.md#raycasting). 
 
 ![do](../assets/directional/directional_occlusion.png)
 

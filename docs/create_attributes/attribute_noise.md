@@ -8,28 +8,24 @@ Generate a greyscale noise attribute, optionally blending with an existing attri
 Standard fBM and Voronoi noise types are available. Most base noise settings come directly from Blender's
 [Noise texture node](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/texture/noise.html) and [Voronoi node](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/texture/voronoi.html)
 
-For reference, here are examples of the basic types
+For reference, here are examples of basic noises:
 
 <div class="grid cards" markdown>
 
 - __fBM__
 
-    ---
     ![fbm](../assets/noise/fbm.png)
 
 - __Voronoi Distance F1__
 
-    ---
     ![voronoi_f1](../assets/noise/voronoi_f1_e.png)
 
 - __Voronoi Distance F2__
 
-    ---
     ![voronoi_f2](../assets/noise/voronoi_f2_e.png)
 
 - __Voronoi Cells F1__
 
-    ---
     ![voronoi_cells_f1](../assets/noise/voronoi_cells_f1_e.png)
 
 </div>
@@ -38,7 +34,7 @@ For reference, here are examples of the basic types
 
 ## Distortion
 
-Distortion settings offset the position used to generate the noise, squashing and stretching the noise. There are three categories of distortion:
+Distortion applies an offset to the position used to generate the noise, squashing and stretching the result. There are three categories of distortion:
 
 ### Scale
 

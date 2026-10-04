@@ -16,7 +16,7 @@ vertLab is installed as an **asset library**, not an add-on.
 3. Open Blender and go to **Edit/Preferences/Asset Libraries.**
 4. Click ++"\+"++ Add Asset Library.
 5. Navigate to the unzipped folder and press **Add Asset Library**.
-6. You should now see "vertLab" in your asset libraries.  
+6. You should now see "Vert Lab" in your asset libraries.  
 **Recommended**: Here you can choose how the data is imported by default. Setting this to **Pack** or **Link** will make it easier to update versions. **Pack** is recommended, see [Official Documentation](https://docs.blender.org/manual/en/latest/editors/asset_browser.html#import-settings) for more information.
 
 vertLab should now be installed. Modifiers will now show up under the **Add Modifier** menu.

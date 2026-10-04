@@ -4,8 +4,9 @@
 
 Modifiers that use ray casting use the same underlying method:
 
-1. Rays are cast from a point in a Fibonacci cone up to the specified angle
-![rays](./assets/rays/ray_distribution_angle.gif "Ray Distribution"){ width=512 }
+1. Rays are cast from a point in a Fibonacci cone up to the specified angle.
+
+    ![rays](./assets/rays/ray_distribution_angle.gif "Ray Distribution"){ width=512 }
 
 2. Collisions with geometry and their distance are recorded.
 3. The collision data is averaged for the point using one of two methods:
