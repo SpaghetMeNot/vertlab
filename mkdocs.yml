@@ -119,7 +119,7 @@ nav:
   - create_attributes/radial_gradient.md
   - create_attributes/silhouette_distance.md
   - create_attributes/thickness.md
-  - create_attributes/tri-planar_tecture.md
+  - create_attributes/tri-planar_texture.md
 
 - Modify Attributes:
   - modify_attributes/attribute_flow.md
