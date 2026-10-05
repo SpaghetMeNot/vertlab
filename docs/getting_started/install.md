@@ -1,4 +1,4 @@
-# 1. Install
+# Install
 
 vertLab is installed as an **asset library**, not an add-on.
 

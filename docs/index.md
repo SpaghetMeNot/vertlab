@@ -1,7 +1,6 @@
-# :construction: vertLab
+# vertLab
 
-!!! warning
-    This site is currently placeholder/WIP
+![](./assets/vertLab_banner_16_9.jpg)
 
 Welcome to the vertLab documentation. Here you'll find everything there is to know about the tools.
 

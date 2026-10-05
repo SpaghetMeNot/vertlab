@@ -1,4 +1,4 @@
-# 4. Examples File
+# Examples File
 
 ## Example Scenes
 Examples for all tools can be found in the "Examples" file, available as a separate download on the store page: ***vertLab \[version\] Examples.blend***

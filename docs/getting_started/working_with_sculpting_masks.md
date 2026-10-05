@@ -1,4 +1,4 @@
-# 3. Working with Sculpting Masks
+# Working with Sculpting Masks
 
 Sculpting mask tools are available through the ***Mask*** menu in sculpt mode.
 

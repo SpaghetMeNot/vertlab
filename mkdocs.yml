@@ -98,14 +98,14 @@ plugins:
       manual: false
 
 nav:
-- Home:
-  - index.md
+- Home: index.md
+- common_settings.md
 
 - Getting Started:
-  - getting_started/install.md
-  - getting_started/working_with_attributes.md
-  - getting_started/working_with_sculpting_masks.md
-  - getting_started/examples.md
+  - 1. Install: getting_started/install.md
+  - 2. Working with Attributes: getting_started/working_with_attributes.md
+  - 3. Working with Sculpting Masks: getting_started/working_with_sculpting_masks.md
+  - 4. Examples File: getting_started/examples.md
 
 - Create Attributes:
   - create_attributes/ambient_occlusion.md
@@ -119,6 +119,7 @@ nav:
   - create_attributes/radial_gradient.md
   - create_attributes/silhouette_distance.md
   - create_attributes/thickness.md
+  - create_attributes/tri-planar_tecture.md
 
 - Modify Attributes:
   - modify_attributes/attribute_flow.md

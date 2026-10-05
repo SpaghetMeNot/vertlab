@@ -1,4 +1,4 @@
-# 2. Working with Attributes
+# Working with Attributes
 
 vertLab works mostly with float attributes. You can think of this as a greyscale vertex color, usually between [0:1].
 
