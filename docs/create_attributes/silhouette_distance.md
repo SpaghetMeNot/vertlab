@@ -2,6 +2,10 @@
 
 ![icon](../assets/icons/silhouette.png){ width=128 }
 
+Calculate silhouette distance from a camera's perspective. Useful for outline and inner glow effects.
+
+![silhouette_dist](../assets/silhouette/silhouette_dist.png)
+
 ## Outputs
 - **Silhouette Distance:** Output attribute.
 - **Color:** Output attribute as color (used for visualisation).

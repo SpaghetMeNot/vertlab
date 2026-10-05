@@ -2,6 +2,24 @@
 
 ![icon](../assets/icons/Thickness.png){ width=128 }
 
+Calculate ray-traced thickness of a mesh. For more information about the ray-casting process see [here](../common_settings.md#raycasting). You can reduce noise by increasing ray count (expensive) or blur (cheaper).
+
+![thickness](../assets/thickness/thickness.png)
+
+The ray length sets the maximum thickness to search for:
+
+<div class="grid cards" markdown>
+
+- __Short Rays__
+
+    ![short_rays](../assets/thickness/thickness_small.png)
+
+- __Long Rays__
+
+    ![long_rays](../assets/thickness/thickness_large.png)
+
+</div>
+
 ## Outputs
 - **Thickness:** Output thickness attribute.
 - **Color:** Output thickness attribute as color (used for visualisation).

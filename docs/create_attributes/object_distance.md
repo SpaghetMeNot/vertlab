@@ -2,6 +2,72 @@
 
 ![icon](../assets/icons/ObjectDistance.png){ width=128 }
 
+Calculate distance from the surface of other meshes.
+
+![object_distance](../assets/directional/object_distance.png)
+
+Specify up to 6 objects or a collection to measure distance from.
+
+## Signed/Unsigned Distance
+
+- Unsigned distance is the absolute distance to nearest surface.
+- Signed distance will produce negative distances on the inside of objects. 
+
+<div class="grid cards" markdown>
+
+- __Unsigned Distance__
+
+    ![unsigned_dist](../assets/object_distance/unsigned_distance.png)
+
+- __Signed Distance__
+
+    ![signed_dist](../assets/object_distance/signed_distance.png)
+
+</div>
+
+Signed distance will allow isloation of outside/inside areas when remapping.
+
+<div class="grid cards" markdown>
+
+- __Signed Distance Remap__
+
+    ![signed_dist](../assets/object_distance/remap_signed.png)
+
+- __Unsigned Distance Remap__
+
+    ![unsigned_dist](../assets/object_distance/remap_unsigned.png)
+
+</div>
+
+## Union Islands
+
+There is an option to union Boolean manifold islands before calulating distance. This removes artifacts caused by overlapping surfaces.
+
+<div class="grid cards" markdown>
+
+- __Union Off__
+
+    Unsigned
+
+    ![unsigned_dist](../assets/object_distance/no_union.png)
+
+    Signed
+
+    ![unsigned_dist](../assets/object_distance/no_union_signed.png)
+
+- __Union On__
+
+    Unsigned
+
+    ![unsigned_dist](../assets/object_distance/union.png)
+
+    Signed
+
+    ![unsigned_dist](../assets/object_distance/union_signed.png)
+
+</div>
+
+
 ## Outputs
 - **Output:** Distance point attribute.
 - **Color:** Distance attribute as color (used for visualisation).

@@ -2,6 +2,8 @@
 
 ![icon](../assets/icons/mask_noise.png){ width=128 }
 
+Creates a mask from noise. Internally uses the vertLab [Attribute Noise](../create_attributes/attribute_noise.md) modifier.
+
 ## Settings
 
 #### Mix

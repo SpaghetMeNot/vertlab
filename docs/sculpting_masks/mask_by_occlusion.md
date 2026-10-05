@@ -2,6 +2,8 @@
 
 ![icon](../assets/icons/mask_occlusion.png){ width=128 }
 
+Creates a mask based on ray-traced ambient occlusion. Internally uses the vertLab [Ambient Occlusion](../create_attributes/ambient_occlusion.md) modifier.
+
 ## Settings
 
 #### Mix

@@ -2,6 +2,7 @@
 
 ![icon](../assets/icons/mask_distance.png){ width=128 }
 
+Creates a mask based on distance to other objects. Internally uses the vertLab [Object Distance](../create_attributes/object_distance.md) modifier.
 ## Settings
 
 #### Mix

@@ -2,7 +2,7 @@
 
 ![icon](../assets/icons/CurvatureDirection.png){ width=128 }
 
-Calculate the direction of minimum and maximum mesh curvature. The result is a vector that can be used for further operations such as [Attribute Flow](../modify_attributes/attribute_flow.md) or point advection.
+Calculate the direction of maximum and minimum mesh curvature. The result is a vector that can be used for further operations such as [Attribute Flow](../modify_attributes/attribute_flow.md) or point advection.
 
 !!! info "Images on this page use a simple point advection available in the examples file."
     

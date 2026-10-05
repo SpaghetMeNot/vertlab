@@ -2,6 +2,8 @@
 
 ![icon](../assets/icons/mask_remap.png){ width=128 }
 
+Remap the mask. Internally uses the vertLab [Attribute Remap](../modify_attributes/attribute_remap.md) modifier.
+
 ## Settings
 
 #### Blur

@@ -2,6 +2,8 @@
 
 ![icon](../assets/icons/mask_direction.png){ width=128 }
 
+Creates a mask from normal direction. Internally uses the vertLab [Direction Angle](../create_attributes/direction_angle.md) modifier.
+
 ## Settings
 
 - **Space:** Coordinate space of direction vector:

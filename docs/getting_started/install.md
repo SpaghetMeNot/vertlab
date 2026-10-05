@@ -1,4 +1,4 @@
-# Install
+# 1. Install
 
 vertLab is installed as an **asset library**, not an add-on.
 
@@ -21,4 +21,4 @@ vertLab is installed as an **asset library**, not an add-on.
 
 vertLab should now be installed. Modifiers will now show up under the **Add Modifier** menu.
 
-![add modifier](./assets/install/add_modifier.png){width=512}
+![add modifier](../assets/install/add_modifier.png){width=512}

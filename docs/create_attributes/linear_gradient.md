@@ -2,7 +2,7 @@
 
 ![icon](../assets/icons/Gradient.png){ width=128 }
 
-Creates a simple linear gradient from one side of a mesh to another.
+Creates a simple linear gradient from one side of a mesh to another along an axis.
 
 ![gradient](../assets/directional/gradient.png)
 

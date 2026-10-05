@@ -2,6 +2,8 @@
 
 ![icon](../assets/icons/attribute_mix.png){ width=128 }
 
+Mix two attributes together with familiar blend modes and opacity. The opacity field can be given an attribute to act as a mask.
+
 ## Outputs
 - **Output:** Blended attribute.
 - **Output Color:** Blended attribute as color (used for visualisation).

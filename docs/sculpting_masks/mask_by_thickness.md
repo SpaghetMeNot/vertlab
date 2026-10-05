@@ -2,6 +2,8 @@
 
 ![icon](../assets/icons/mask_thickness.png){ width=128 }
 
+Creates a mask based on mesh thickness. Internally uses the vertLab [Thickness](../create_attributes/thickness.md) modifier.
+
 ## Settings
 
 #### Mix

@@ -6,7 +6,7 @@ Generate a greyscale noise attribute, optionally blending with an existing attri
 
 ## Noise Types
 Standard fBM and Voronoi noise types are available. Most base noise settings come directly from Blender's
-[Noise texture node](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/texture/noise.html) and [Voronoi node](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/texture/voronoi.html)
+[Noise texture](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/texture/noise.html) and [Voronoi](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/texture/voronoi.html) nodes.
 
 For reference, here are examples of basic noises:
 
@@ -73,7 +73,7 @@ The values of the noise can be remapped in the values section.
 
 </div>
 
-Gamma and [S-Curve Controls](../common_settings.md#s-curve) can add contrast.
+Gamma and [S-Curve](../common_settings.md#s-curve) controls can add contrast.
 
 <div class="grid cards" markdown>
 

@@ -1,8 +1,96 @@
 # Attribute Flow
 
-![icon](../assets/icons/Flow.png){ width=128 }
+![icon](../assets/icons/Flow.png){ width=128 } ![icon](../assets/icons/FlowAnimated.png){width=128}
 
-## Outputs:
+Run a flow simulation of an attribute across the surface of a mesh. This modifier has two versions with mostly identical settings:
+
+- **Attribute Flow:** Static flow simulation is calculated at once, number of iterations is specified up-front.
+- **Attribute Flow Animated:** Flow is calculated per frame.
+
+## Flow Steps
+Getting the size of flow step for a mesh is important:
+
+- Too low = stepping artifacts.
+- Too high = very expensive.
+
+<div class="grid grid-3" markdown>
+
+**Large step, low resolution:**
+    ![steps1](../assets/attribute_flow/flow_step_size1.png)
+    
+**Large step, high resolution:**
+    ![steps2](../assets/attribute_flow/flow_step_size2.png)
+    
+**Small step, high resolution:**
+    ![steps3](../assets/attribute_flow/flow_step_size3.png)
+</div>
+
+## Fade
+The fade value can be positive or negative.
+
+- Positive values allow for darker areas to flow into lighter areas.
+- Negative values fade the attribute each iteration.
+
+<div class="grid grid-3" markdown>
+
+**No Fade:**
+    ![fade1](../assets/attribute_flow/flow_fade_none.png)
+    
+**Positive Fade:**
+    ![fade1](../assets/attribute_flow/flow_fade_positive.png)
+    
+**Negative Fade:**
+    ![fade1](../assets/attribute_flow/flow_fade_negative.png)
+</div>
+
+## Streaks
+
+Streaks are created by a random noise slowing down the flow, by adjusting this noise you can achieve a wide variety of streak styles
+
+<div class="grid grid-3" markdown>
+
+![streaks1](../assets/attribute_flow/flow_streaks_1.png)
+
+![streaks2](../assets/attribute_flow/flow_streaks_2.png)
+
+![streaks3](../assets/attribute_flow/flow_streaks_3.png)
+</div>
+
+## Flow Direction
+The direction of flow can be based on a single direction or vector attribute. Random direction can then be mixed in. For completely random direction set direction to [0,0,0] and random value to 1.
+
+<div class="grid grid-3" markdown>
+
+**Standard down direction:**
+    ![direction1](../assets/attribute_flow/flow_direction_down.png)
+
+**Bidirectional on:**
+    ![direction2](../assets/attribute_flow/flow_direction_bidirectional.png)
+
+**Fully random bidirectional:**
+    ![direction3](../assets/attribute_flow/flow_direction_random_bidirectional.png)
+</div>
+
+You can use directions output by [Curvature Direction](../create_attributes/curvature_direction.md). Bidirectional should be turned on because the curvature direction is bidirectional by default.
+
+<div class="grid grid-3" markdown>
+
+**Base noise:**
+    ![curve_flow1](../assets/attribute_flow/flow_curvature_off.png)
+
+**Flow along max curvature:**
+    ![curve_flow2](../assets/attribute_flow/flow_curvature_max.png)
+
+**Flow along min curvature:**
+    ![curve_flow3](../assets/attribute_flow/flow_curvature_min.png)
+
+</div>
+
+
+
+
+
+## Outputs
 - **Attribute:** Output attribute with flow applied.
 - **Color:** Output flowed attribute as color (used for visualisation).
 ## Settings

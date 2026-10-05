@@ -2,6 +2,8 @@
 
 ![icon](../assets/icons/mask_curvature.png){ width=128 }
 
+Creates a mask from mesh curvature. Internally uses the vertLab [Curvature](../create_attributes/curvature.md) modifier.
+
 ## Settings
 #### Mix
 Mix generated mask with existing one.

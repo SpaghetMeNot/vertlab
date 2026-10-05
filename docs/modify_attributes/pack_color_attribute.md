@@ -2,6 +2,8 @@
 
 ![icon](../assets/icons/pack_attributes.png){ width=128 }
 
+Pack/blend up to four float attributes into a color attribute.
+
 ## Outputs
 - **Color (Point):** No description provided.
 - **Color (Face Corner):** No description provided.

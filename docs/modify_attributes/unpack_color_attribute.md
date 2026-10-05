@@ -2,6 +2,8 @@
 
 ![icon](../assets/icons/unpack_attributes.png){ width=128 }
 
+Split a color attribute into separate float attributes.
+
 ## Outputs
 - **Red:** Red channel of color attribute.
 - **Green:** Green channel of color attribute.

@@ -1,8 +1,10 @@
 # Mask from Attribute
 
-## Settings
+![icon](../assets/icons/attribute_to_mask.png){ width=128 }
 
-![icon](../assets/icons/mask_flow.png){ width=128 }
+Creates a mask from an existing attribute.
+
+## Settings
 
 - **Attribute:** Attribute to use as mask.
 

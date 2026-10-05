@@ -2,6 +2,8 @@
 
 ![icon](../assets/icons/mask_flow.png){ width=128 }
 
+Runs a flow simulation on mask. Internally uses the vertLab [Attribute Flow](../modify_attributes/attribute_flow.md) modifier.
+
 ## Settings
 
 #### Mix

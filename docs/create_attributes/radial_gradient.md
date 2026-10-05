@@ -2,6 +2,8 @@
 
 ![icon](../assets/icons/GradientRadial.png){ width=128 }
 
+Simple radial gradient from a single point. The point can be based on the bounding box center or the object origin and can have an additional offset.
+
 ## Outputs
 - **Gradient:** Output gradient.
 - **Color:** Output gradient as color (used for visualisation).

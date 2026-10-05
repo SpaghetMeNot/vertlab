@@ -2,6 +2,19 @@
 
 ![icon](../assets/icons/attribute_remap.png){ width=128 }
 
+Remap an attribute using a variety of:
+
+- Blur.
+- Levels.
+- [Contrast](../common_settings.md#s-curve).
+- [Histogram Operations](../common_settings.md#histogram-operations).
+
+!!! info "Remember to set output attribute"
+    This modifier has no default output attribute. Although you'll see changes in the viewport, the remapped attribute won't be written to unless specified in the output.
+
+    See [here](../working_with_attributes.md) for more information on output attributes.
+
+
 ## Outputs
 - **Output:** Remapped attribute.
 - **Output Color:** Remapped attribute as color (used for visualisation).
