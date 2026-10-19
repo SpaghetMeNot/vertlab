@@ -32,7 +32,6 @@ You can preserve sharp edges by switching to the ***Face Corner*** domain. This 
 </div>
 
 
-
 ## Outputs
 - **Point Occlusion:** Output occlusion attribute for points (no sharp edges).
 - **Face Corner Occlusion:** Output occlusion attribute for face corners (allows sharp edges). Domain must be set to "Face Corner".
@@ -42,7 +41,8 @@ You can preserve sharp edges by switching to the ***Face Corner*** domain. This 
 - **Strength:** Raises calculated AO by a power. Increase to darken AO.
 - **Domain:** Calculate AO per:
     - **Point:** Calculate AO per point. Cheaper but does not allow for sharp edges.
-    - **Face Corner:** Calculate AO on face corners. More expensive but allows for sharp edges. Useful for low poly models
+    - **Face Corner:** Calculate AO on face corners. More expensive but allows for sharp edges. Useful for low poly models.
+- **Sharp Edges:** How much sharp edges affect the result. 1 = Rays use sharp edge normals, 0 = Rays use point normals (Identical to point AO).
 
 ----
 #### Rays
@@ -58,6 +58,7 @@ You can preserve sharp edges by switching to the ***Face Corner*** domain. This 
 Blur result. Can help improve noise on dense meshes.
 
 - **Blur Iterations:** How many iterations to blur the result.
+- **Weight:** Blur weight of each iteration. Useful at very low iteration counts to reduce the blur effect.
 
 ----
 #### Occlusion Geometry
