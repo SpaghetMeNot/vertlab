@@ -8,7 +8,7 @@ Welcome to the vertLab documentation. Here you'll find everything there is to kn
 
 VertLab is a collection of tools for controlling **vertex attributes** and **sculpting masks**.
 
-Vertex attributes are versatile. Example use-cases include:
+Attributes are incredibly versatile. Example use-cases include:
 
 - Use to drive shader effects e.g. texture blending.
 - Use to displace geometry, or drive any procedural geometry effect.
@@ -27,7 +27,7 @@ Create attributes from advanced mesh analysis tools such as ray-traced occlusion
 
 ### :octicons-sliders-24: Modify Attributes
 
-Modify attributes by remapping, mixing or flowing them down a mesh. You can also pack up to four attributes to a vertex color for exporting to game engines.
+Modify attributes by remapping, mixing together or flowing them down a mesh. You can also pack up to four attributes to a vertex color for exporting to game engines.
 
 ![modify_attributes](./assets/modify_attributes.png)
 
