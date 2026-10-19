@@ -1736,9 +1736,10 @@
 <li><strong>Strength:</strong> Raises calculated AO by a power. Increase to darken AO.</li>
 <li><strong>Domain:</strong> Calculate AO per:<ul>
 <li><strong>Point:</strong> Calculate AO per point. Cheaper but does not allow for sharp edges.</li>
-<li><strong>Face Corner:</strong> Calculate AO on face corners. More expensive but allows for sharp edges. Useful for low poly models</li>
+<li><strong>Face Corner:</strong> Calculate AO on face corners. More expensive but allows for sharp edges. Useful for low poly models.</li>
 </ul>
 </li>
+<li><strong>Sharp Edges:</strong> How much sharp edges affect the result. 1 = Rays use sharp edge normals, 0 = Rays use point normals (Identical to point AO).</li>
 </ul>
 <hr>
 <h4 id="rays">Rays<a class="headerlink" href="#rays" title="Permanent link">¶</a></h4>
@@ -1757,6 +1758,7 @@
 <p>Blur result. Can help improve noise on dense meshes.</p>
 <ul>
 <li><strong>Blur Iterations:</strong> How many iterations to blur the result.</li>
+<li><strong>Weight:</strong> Blur weight of each iteration. Useful at very low iteration counts to reduce the blur effect.</li>
 </ul>
 <hr>
 <h4 id="occlusion-geometry">Occlusion Geometry<a class="headerlink" href="#occlusion-geometry" title="Permanent link">¶</a></h4>
