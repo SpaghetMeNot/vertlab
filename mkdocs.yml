@@ -100,6 +100,7 @@ plugins:
 nav:
 - Home: index.md
 - common_settings.md
+- licensing.md
 
 - Getting Started:
   - 1. Install: getting_started/install.md
