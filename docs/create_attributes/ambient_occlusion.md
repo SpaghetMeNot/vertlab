@@ -43,6 +43,7 @@ You can preserve sharp edges by switching to the ***Face Corner*** domain. This 
     - **Point:** Calculate AO per point. Cheaper but does not allow for sharp edges.
     - **Face Corner:** Calculate AO on face corners. More expensive but allows for sharp edges. Useful for low poly models.
 - **Sharp Edges:** How much sharp edges affect the result. 1 = Rays use sharp edge normals, 0 = Rays use point normals (Identical to point AO).
+- **Offset Corners:** Offset corner samples inside faces. This prevents over-darkening on larger faces.
 
 ----
 #### Rays
@@ -64,4 +65,5 @@ Blur result. Can help improve noise on dense meshes.
 #### Occlusion Geometry
 - **Occlusion Object:** Additional object to act as occluder.
 - **Occlusion Collection:** Additional collection of objects to act as occluders.
+
 

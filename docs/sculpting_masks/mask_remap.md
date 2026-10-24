@@ -6,6 +6,7 @@ Remap the mask. Internally uses the vertLab [Attribute Remap](../modify_attribut
 
 ## Settings
 
+----
 #### Blur
 Blur attribute before remapping.
 
@@ -16,12 +17,16 @@ Blur attribute before remapping.
 Remap attribute with levels.
 
 - **Interpolation:** Interpolation used for levels:
-    - **Linear.**
-    - **Smooth.**
-    - **Stepped.**
-- **Input Range:** Min/max input values. Use to increase contrast and spread black/white values.
-- **Output Range:** Define the value range of the output.
+    - **Linear:** Linear interpolation for levels remapping.
+    - **Smooth:** Smooth Hermite edge interpolation (increases contrast).
+    - **Smoother:** Smoother Hermite edge interpolation (further increases contrast).
+    - **Stepped:** Decompose values into discrete steps.
+- **Input Min:** Min/max input values. Use to increase contrast and spread black/white values.
+- **Max:** Min/max input values. Use to increase contrast and spread black/white values.
+- **Output Min:** Define the value range of the output.
+- **Max:** Define the value range of the output.
 - **Steps:** Number of steps/bands.
+- **Invert:** Invert values.
 - **Clamp:** Clamps output range between 0-1.
 - **Gamma:** Apply gamma to output values. 1 = no change, higher values darken, lower values brighten.
 

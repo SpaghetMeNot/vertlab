@@ -24,13 +24,13 @@ Mix generated mask with existing one.
 
 ----
 #### Noise Settings
-- **Space:** Coordinate space used for noise:
-    - **Local:** Use object's space.
-    - **Global:** Use global space.
 - **Noise Type:** Type of noise to generate:
     - **fBM.**
     - **Voronoi Distance.**
     - **Voronoi Cells.**
+    - **Multifractal.**
+    - **Hybrid Multifractal.**
+    - **Ridged Multifractal.**
 - **Voronoi Type:** Voronoi feature to compute:
     - **F1:** Distance to closest point.
     - **F2:** Distance to second closest point.
@@ -43,42 +43,51 @@ Mix generated mask with existing one.
 - **Feature Size:** Size of the largest features in the noise.
 - **Offset:** Offset the noise W position. Effectively a smooth transition between seeds.
 - **Detail:** The number of noise octaves. Higher values give more detailed noise but increase render time.
-- **Detail:** The number of Voronoi layers to sum.
 - **Roughness:** Blend factor between an octave and its previous one. A value of zero corresponds to zero detail.
 - **Lacunarity:** The difference between the scale of each two consecutive octaves. Larger values corresponds to larger scale for higher octaves.
+- **Octave Offset:** An added offset to each octave, determines the level where the highest octave will appear.
+- **Gain:** An extra multiplier to tune the magnitude of octaves.
 - **Exponent:** Exponent of the Minkowski distance.
 - **Randomness:** Randomness of Voronoi points.
 
 ----
 #### Distortion
-Apply distortion to the noise.
+- **Scale X:** X Scale applied to noise coordinates. Useful for directional noise such as wood grain or rock strata.
+- **Y:** Y Scale applied to noise coordinates. Useful for directional noise such as wood grain or rock strata.
+- **Z:** Z Scale applied to noise coordinates. Useful for directional noise such as wood grain or rock strata.
 
-- **Scale:** Scale applied to noise coordinates. Useful for directional noise such as wood grain or rock strata.
-- **Warp:** Use another noise to warp coordinates.
+----
+#### Normal Warp
+- **Normal Warp:** Amount to use normals to warp the noise. Turning this to 1 will ignore position and use only normal.
+- **Normal Blur:** Iterative blur for normals, use to smooth out the normal warping.
+
+----
+#### Noise Warp
 - **Warp Amount:** Amount to warp the noise.
 - **Feature Size:** Size of the largest features in the distortion noise.
+- **Offset:** Offset the noise W position. Effectively a smooth transition between seeds.
 - **Detail:** The number of noise octaves. Higher values give more detailed noise but increase render time.
 - **Scale Effect:** How much non-uniform scale is applied to the warp noise.
 
 ----
 #### Values
-Remap the values of the noise.
 
+----
+#### Histogram
+- **Invert.**
 - **Splits:** Create a saw-tooth banding effect. This value corresponds to the number of bands applied.
 - **Fold:** Invert values above/below a threshold. Another method of creating a banding effect. Can be used to remove the abrupt changes in values caused by splits:
     - **None.**
     - **Peaks:** Invert values above a threshold.
     - **Valleys:** Invert values below a threshold.
 - **Threshold.**
-- **Levels:** Remap values:
-    - **None.**
-    - **Auto:** Detect the minimum and maximum values on geometry and remap to use the full 0-1 range. Optionally change the gamma.
-    - **Manual:** Specify the min/max input, interpolation and gamma.
-- **Interpolation:** Interpolation used for levels.
-    - **Linear.**
-    - **Smooth.**
-- **Clamp:** Clamp output values between 0-1.
-- **Min:** Minimum input value. Increase to spread black values.
-- **Max:** Maximum input value. Decrease to spread white values.
-- **Gamma:** Gamma of midtone values.
 
+----
+#### Contrast
+- **Gamma:** Adjust gamma (power) of values.
+- **S-Curve:** Intensity of S-curve applied to value. 0 = linear, 1 = maximum S-curve, -1 = maximum negative S-curve.
+- **S-Curve Midpoint:** Shift the inflection point of the S-curve.
+- **Interpolation:** Interpolation used for values:
+    - **Linear:** Linear interpolation.
+    - **Smooth Step:** Smooth Hermite edge interpolation (increases contrast).
+    - **Smoother Step:** Smoother Hermite edge interpolation (further increases contrast).

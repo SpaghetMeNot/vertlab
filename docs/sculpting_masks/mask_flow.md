@@ -29,7 +29,10 @@ Direction of flow.
 - **Space:** Coordinate space of flow direction:
     - **Local:** Flow direction is in local space (uses object rotation).
     - **Global:** Flow direction is in global space (ignores object rotation).
-- **Direction:** Flow direction vector.
+- **Direction X:** Flow direction vector.
+- **Y.**
+- **Z.**
+- **Bidirectional:** Run flow similuation twice in opposite directions.
 - **Random:** Mix in random noise to flow direction. A value of 1 will completely ignore specified direction.
 
 ----
