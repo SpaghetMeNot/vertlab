@@ -1392,10 +1392,54 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#normal-warp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Normal Warp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#noise-warp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Noise Warp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#values" class="md-nav__link">
     <span class="md-ellipsis">
       
         Values
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#histogram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histogram
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contrast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contrast
       
     </span>
   </a>
@@ -1663,10 +1707,54 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#normal-warp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Normal Warp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#noise-warp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Noise Warp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#values" class="md-nav__link">
     <span class="md-ellipsis">
       
         Values
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#histogram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histogram
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contrast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contrast
       
     </span>
   </a>
@@ -1720,15 +1808,13 @@
 <hr>
 <h4 id="noise-settings">Noise Settings<a class="headerlink" href="#noise-settings" title="Permanent link">¶</a></h4>
 <ul>
-<li><strong>Space:</strong> Coordinate space used for noise:<ul>
-<li><strong>Local:</strong> Use object's space.</li>
-<li><strong>Global:</strong> Use global space.</li>
-</ul>
-</li>
 <li><strong>Noise Type:</strong> Type of noise to generate:<ul>
 <li><strong>fBM.</strong></li>
 <li><strong>Voronoi Distance.</strong></li>
 <li><strong>Voronoi Cells.</strong></li>
+<li><strong>Multifractal.</strong></li>
+<li><strong>Hybrid Multifractal.</strong></li>
+<li><strong>Ridged Multifractal.</strong></li>
 </ul>
 </li>
 <li><strong>Voronoi Type:</strong> Voronoi feature to compute:<ul>
@@ -1747,27 +1833,41 @@
 <li><strong>Feature Size:</strong> Size of the largest features in the noise.</li>
 <li><strong>Offset:</strong> Offset the noise W position. Effectively a smooth transition between seeds.</li>
 <li><strong>Detail:</strong> The number of noise octaves. Higher values give more detailed noise but increase render time.</li>
-<li><strong>Detail:</strong> The number of Voronoi layers to sum.</li>
 <li><strong>Roughness:</strong> Blend factor between an octave and its previous one. A value of zero corresponds to zero detail.</li>
 <li><strong>Lacunarity:</strong> The difference between the scale of each two consecutive octaves. Larger values corresponds to larger scale for higher octaves.</li>
+<li><strong>Octave Offset:</strong> An added offset to each octave, determines the level where the highest octave will appear.</li>
+<li><strong>Gain:</strong> An extra multiplier to tune the magnitude of octaves.</li>
 <li><strong>Exponent:</strong> Exponent of the Minkowski distance.</li>
 <li><strong>Randomness:</strong> Randomness of Voronoi points.</li>
 </ul>
 <hr>
 <h4 id="distortion">Distortion<a class="headerlink" href="#distortion" title="Permanent link">¶</a></h4>
-<p>Apply distortion to the noise.</p>
 <ul>
-<li><strong>Scale:</strong> Scale applied to noise coordinates. Useful for directional noise such as wood grain or rock strata.</li>
-<li><strong>Warp:</strong> Use another noise to warp coordinates.</li>
+<li><strong>Scale X:</strong> X Scale applied to noise coordinates. Useful for directional noise such as wood grain or rock strata.</li>
+<li><strong>Y:</strong> Y Scale applied to noise coordinates. Useful for directional noise such as wood grain or rock strata.</li>
+<li><strong>Z:</strong> Z Scale applied to noise coordinates. Useful for directional noise such as wood grain or rock strata.</li>
+</ul>
+<hr>
+<h4 id="normal-warp">Normal Warp<a class="headerlink" href="#normal-warp" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Normal Warp:</strong> Amount to use normals to warp the noise. Turning this to 1 will ignore position and use only normal.</li>
+<li><strong>Normal Blur:</strong> Iterative blur for normals, use to smooth out the normal warping.</li>
+</ul>
+<hr>
+<h4 id="noise-warp">Noise Warp<a class="headerlink" href="#noise-warp" title="Permanent link">¶</a></h4>
+<ul>
 <li><strong>Warp Amount:</strong> Amount to warp the noise.</li>
 <li><strong>Feature Size:</strong> Size of the largest features in the distortion noise.</li>
+<li><strong>Offset:</strong> Offset the noise W position. Effectively a smooth transition between seeds.</li>
 <li><strong>Detail:</strong> The number of noise octaves. Higher values give more detailed noise but increase render time.</li>
 <li><strong>Scale Effect:</strong> How much non-uniform scale is applied to the warp noise.</li>
 </ul>
 <hr>
 <h4 id="values">Values<a class="headerlink" href="#values" title="Permanent link">¶</a></h4>
-<p>Remap the values of the noise.</p>
+<hr>
+<h4 id="histogram">Histogram<a class="headerlink" href="#histogram" title="Permanent link">¶</a></h4>
 <ul>
+<li><strong>Invert.</strong></li>
 <li><strong>Splits:</strong> Create a saw-tooth banding effect. This value corresponds to the number of bands applied.</li>
 <li><strong>Fold:</strong> Invert values above/below a threshold. Another method of creating a banding effect. Can be used to remove the abrupt changes in values caused by splits:<ul>
 <li><strong>None.</strong></li>
@@ -1776,21 +1876,19 @@
 </ul>
 </li>
 <li><strong>Threshold.</strong></li>
-<li><strong>Levels:</strong> Remap values:<ul>
-<li><strong>None.</strong></li>
-<li><strong>Auto:</strong> Detect the minimum and maximum values on geometry and remap to use the full 0-1 range. Optionally change the gamma.</li>
-<li><strong>Manual:</strong> Specify the min/max input, interpolation and gamma.</li>
+</ul>
+<hr>
+<h4 id="contrast">Contrast<a class="headerlink" href="#contrast" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Gamma:</strong> Adjust gamma (power) of values.</li>
+<li><strong>S-Curve:</strong> Intensity of S-curve applied to value. 0 = linear, 1 = maximum S-curve, -1 = maximum negative S-curve.</li>
+<li><strong>S-Curve Midpoint:</strong> Shift the inflection point of the S-curve.</li>
+<li><strong>Interpolation:</strong> Interpolation used for values:<ul>
+<li><strong>Linear:</strong> Linear interpolation.</li>
+<li><strong>Smooth Step:</strong> Smooth Hermite edge interpolation (increases contrast).</li>
+<li><strong>Smoother Step:</strong> Smoother Hermite edge interpolation (further increases contrast).</li>
 </ul>
 </li>
-<li><strong>Interpolation:</strong> Interpolation used for levels.<ul>
-<li><strong>Linear.</strong></li>
-<li><strong>Smooth.</strong></li>
-</ul>
-</li>
-<li><strong>Clamp:</strong> Clamp output values between 0-1.</li>
-<li><strong>Min:</strong> Minimum input value. Increase to spread black values.</li>
-<li><strong>Max:</strong> Maximum input value. Decrease to spread white values.</li>
-<li><strong>Gamma:</strong> Gamma of midtone values.</li>
 </ul>
 
 

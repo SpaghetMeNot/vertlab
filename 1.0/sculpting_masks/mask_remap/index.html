@@ -1675,6 +1675,7 @@
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/icons/mask_remap.png" data-desc-position="bottom"><img alt="icon" src="../../assets/icons/mask_remap.png" width="128"></a></p>
 <p>Remap the mask. Internally uses the vertLab <a href="../../modify_attributes/attribute_remap/">Attribute Remap</a> modifier.</p>
 <h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">¶</a></h2>
+<hr>
 <h4 id="blur">Blur<a class="headerlink" href="#blur" title="Permanent link">¶</a></h4>
 <p>Blur attribute before remapping.</p>
 <ul>
@@ -1685,14 +1686,18 @@
 <p>Remap attribute with levels.</p>
 <ul>
 <li><strong>Interpolation:</strong> Interpolation used for levels:<ul>
-<li><strong>Linear.</strong></li>
-<li><strong>Smooth.</strong></li>
-<li><strong>Stepped.</strong></li>
+<li><strong>Linear:</strong> Linear interpolation for levels remapping.</li>
+<li><strong>Smooth:</strong> Smooth Hermite edge interpolation (increases contrast).</li>
+<li><strong>Smoother:</strong> Smoother Hermite edge interpolation (further increases contrast).</li>
+<li><strong>Stepped:</strong> Decompose values into discrete steps.</li>
 </ul>
 </li>
-<li><strong>Input Range:</strong> Min/max input values. Use to increase contrast and spread black/white values.</li>
-<li><strong>Output Range:</strong> Define the value range of the output.</li>
+<li><strong>Input Min:</strong> Min/max input values. Use to increase contrast and spread black/white values.</li>
+<li><strong>Max:</strong> Min/max input values. Use to increase contrast and spread black/white values.</li>
+<li><strong>Output Min:</strong> Define the value range of the output.</li>
+<li><strong>Max:</strong> Define the value range of the output.</li>
 <li><strong>Steps:</strong> Number of steps/bands.</li>
+<li><strong>Invert:</strong> Invert values.</li>
 <li><strong>Clamp:</strong> Clamps output range between 0-1.</li>
 <li><strong>Gamma:</strong> Apply gamma to output values. 1 = no change, higher values darken, lower values brighten.</li>
 </ul>

@@ -1703,16 +1703,16 @@
 <p>Mix generated mask with existing one.</p>
 <ul>
 <li><strong>Blend Mode:</strong> Blend mode with existing mask:<ul>
-<li><strong>Disable:</strong> Disable blend</li>
-<li><strong>Replace:</strong> Replace A with B</li>
-<li><strong>Multiply:</strong> Muliply A by B</li>
-<li><strong>Add:</strong> Add B to A</li>
-<li><strong>Min:</strong> Minimum value of A and B</li>
-<li><strong>Max:</strong> Maximum value of A and B</li>
-<li><strong>Screen:</strong> Brighten A using the brightness of B</li>
-<li><strong>Overlay:</strong> Brighten/darken A using values above/below 0.5 on B. </li>
-<li><strong>Divide:</strong> Divide A by B</li>
-<li><strong>Subtract:</strong> Subract B from A. </li>
+<li><strong>Disable:</strong> Disable blend.</li>
+<li><strong>Replace:</strong> Replace A with B.</li>
+<li><strong>Multiply:</strong> Muliply A by B.</li>
+<li><strong>Add:</strong> Add B to A.</li>
+<li><strong>Min:</strong> Minimum value of A and B.</li>
+<li><strong>Max:</strong> Maximum value of A and B.</li>
+<li><strong>Screen:</strong> Brighten A using the brightness of B.</li>
+<li><strong>Overlay:</strong> Brighten/darken A using values above/below 0.5 on B.</li>
+<li><strong>Divide:</strong> Divide A by B.</li>
+<li><strong>Subtract:</strong> Subract B from A.</li>
 </ul>
 </li>
 <li><strong>Opacity:</strong> Opacity of blend.</li>
@@ -1722,18 +1722,27 @@
 <p>Settings for curvature generation.</p>
 <ul>
 <li><strong>Curvature:</strong> What areas of curvature to mask:<ul>
-<li><strong>Convex:</strong> Mask convex areas, concave areas will be black</li>
-<li><strong>Concave:</strong> Mask concave areas, convex areas will be black</li>
-<li><strong>Absolute:</strong> Output both convex and concave curvature as lighter values</li>
+<li><strong>Full Curvature:</strong> Map full curvature to 0-1 range. 0.5 = No curvature, &gt;0.5 = Convex, &lt;0.5 = Concave.</li>
+<li><strong>Convexity:</strong> Map convexity to 0-1 range. 0 = Flat or concave, 1 = Maximum convexity.</li>
+<li><strong>Concavity:</strong> Map concavity to 0-1 range. 0 = Flat or convex, 1 = Maximum concavity.</li>
+<li><strong>Absolute Curvature:</strong> Ignore concavity/convexity. Map any curvature to 0-1 range.</li>
 </ul>
 </li>
 <li><strong>Method:</strong> Method for measuring mesh curvature:<ul>
-<li><strong>Local Curvature:</strong> Intrinsic curvature of the mesh. Fine details will effect the output dramatically</li>
-<li><strong>Raycast Curvature:</strong> Use raycast collisions to approximate larger scale curvature.</li>
+<li><strong>Edge Angle:</strong> Average edge angle for each vertex. Cheap curvature with no scale.</li>
+<li><strong>Mean Curvature:</strong> Mean curvature of mesh. Values are relative to a specified distance.</li>
+<li><strong>Gaussian Curvature:</strong> Gaussian curvature of mesh. A measure of surface shape: domes/bowls are lighter, saddles are darker. Values are relative to a specified distance.</li>
+<li><strong>Raycast Curvature:</strong> Use raycast collisions in a sphere to approximate larger scale curvature. Higher ray lengths will darken concave areas.</li>
 <li><strong>SDF Curvature:</strong> Generate a SDF from the mesh to read curvature from.</li>
 </ul>
 </li>
-<li><strong>Strength:</strong> Strength/contrast of the raycast result.</li>
+<li><strong>Space:</strong> Which space to calculate curvature in.<ul>
+<li><strong>Local:</strong> Use object coordinates.</li>
+<li><strong>Global:</strong> Use world coordinates.</li>
+</ul>
+</li>
+<li><strong>Scale:</strong> Distance that curvature is measured against. Sets the black/white points of the output.</li>
+<li><strong>Max Angle:</strong> Maximum edge angle. Sets the black/white points of the output.</li>
 <li><strong>Calculate on Boundaries:</strong> Cast rays from mesh boundaries. When on boundaries will often show convex curvature.</li>
 <li><strong>Ray Count:</strong> Number of rays cast from each point. More rays increases quality but is more expensive. You can use a blur to smooth noise instead of raising the number of rays too high.</li>
 <li><strong>Ray Length:</strong> Maximum distance to check for ray collisions. This will likely increase collisions and therefore scew the curvature towards concave (darker).</li>
@@ -1750,7 +1759,8 @@
 <h4 id="values">Values<a class="headerlink" href="#values" title="Permanent link">¶</a></h4>
 <p>Further adjust mask values.</p>
 <ul>
-<li><strong>Invert:</strong> Invert output mask.</li>
+<li><strong>Contrast:</strong> Add S-curve contrast to values.</li>
+<li><strong>Contrast Midtone:</strong> Change the midpoint of the contrast S-curve.</li>
 <li><strong>Black Point:</strong> Black point of mask, increase to spread black values.</li>
 <li><strong>White Point:</strong> White point of mask, decrease to spread white values.</li>
 </ul>
