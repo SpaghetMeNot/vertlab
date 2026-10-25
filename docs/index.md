@@ -38,3 +38,12 @@ Use vertLab's powerful attribute tools directly on sculpting masks. This include
 
 
 ![sculpt_masks](./assets/sculpt_masks.png)
+
+
+## Contact
+
+If anything is unclear or missing, please reach out!  
+
+:simple-discord: [spaghetTools Discord](https://discord.gg/CtpZWGHFhG)  
+:material-email: <spaghetmenot@gmail.com>  
+:fontawesome-brands-bluesky: [@spaghetmenot.bsky.social](https://bsky.app/profile/spaghetmenot.bsky.social)
