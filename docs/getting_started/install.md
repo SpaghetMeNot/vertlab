@@ -9,6 +9,8 @@ vertLab is installed as an **asset library**, not an add-on.
 
     !!! info "For more information on asset libraries you can check Blender's [Official Documentation](https://docs.blender.org/manual/en/latest/files/asset_libraries/introduction.html#introduction)"
 
+<iframe width="900" height="390" src="https://www.youtube.com/embed/146v89nkX_I?si=wFwQs1Lkb2PFIMRG&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ### First Time Install
 
 1. Download latest .zip file for the closest Blender version (*vertLab 5.2 v1.0.0.zip*).

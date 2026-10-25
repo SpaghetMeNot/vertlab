@@ -7,6 +7,8 @@ vertLab works mostly with float attributes. You can think of this as a greyscale
 
 A float attribute is identical/interchangable with Blender's [Vertex Groups](https://docs.blender.org/manual/en/latest/modeling/meshes/properties/vertex_groups/assigning_vertex_group.html). You can also paint them in [Weight Paint](https://docs.blender.org/manual/en/latest/grease_pencil/modes/weight_paint/introduction.html#weight-paint) mode.
 
+<iframe width="900" height="390" src="https://www.youtube.com/embed/146v89nkX_I?si=maBUzSN7hOg5292_&amp;start=38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ## Output Attributes
 

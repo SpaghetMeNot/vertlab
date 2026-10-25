@@ -1,8 +1,9 @@
-# vertLab
-
-![](./assets/vertLab_banner_16_9.jpg)
+# vertLab for Blender
 
 Welcome to the vertLab documentation. Here you'll find everything there is to know about the tools.
+
+<iframe width="900" height="390" src="https://www.youtube.com/embed/3VxWpMOqhU4?si=Q2jnlvSUTBhWN2i3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ## What is vertLab?
 
